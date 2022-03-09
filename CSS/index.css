@@ -248,6 +248,15 @@ header .hamburger-menu {
   max-width: 1000px;
 }
 
+.gallery__object:hover {
+ transform: scale(1.5,1.5);
+}
+
+.gallery__object {
+  filter: none;
+  -webkit-filter: none;
+}
+
 /*TESTIMONIES*/
 .testimonies__title {
   text-align: center;
@@ -391,6 +400,13 @@ header .hamburger-menu {
   margin-bottom: 50px;
 }
 
+.contact__btn:hover {
+  background-color: white; /*NO ME DECIDO CONTRA 907993*/
+  border: solid;
+  border-color: #3E2140;
+  color: #3E2140;
+}  
+
  /* FOOTER */ 
 footer {
     display: flex;
@@ -399,7 +415,7 @@ footer {
     align-items: center;
     padding-left: 2em;
     padding-right: 2em;
-    background-color: var(--terciary);
+    background: linear-gradient(to left, rgb(180, 176, 176),rgb(233,213,240));
     color: #fff;
     font-family: 'Raleway',Helvetica,Arial,Lucida,sans-serif;
     font-size: large;
@@ -422,7 +438,15 @@ footer {
 
 .foot__networks__contact {
   padding: 10px 10px;
+  filter: none;
+  -webkit-filter: none;
 }
+
+.foot__networks__contact:hover {
+  filter: brightness(0) invert(1);
+  }
+  
+
 
 .foot__suscribe__section__btn {
       background-color: #3E2140; /*NO ME DECIDO CONTRA 907993*/
@@ -434,6 +458,14 @@ footer {
       display: inline-block;
       font-size: large;
 }
+
+.foot__suscribe__section__btn:hover {
+  background-color: white; /*NO ME DECIDO CONTRA 907993*/
+  border: solid;
+  border-color: #3E2140;
+  color: #3E2140;
+}  
+
 
 /*MEDIA QUERYS*/
 @media screen and (max-width: 1200px) {
@@ -497,6 +529,10 @@ footer {
     .service__description {
       margin-left: 0;
     }
+    /*GALLERY*/
+    .gallery__object:hover {
+      transform: scale(1.2,1.2);
+     }
 
 }
 
