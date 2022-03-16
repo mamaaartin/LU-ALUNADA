@@ -82,6 +82,10 @@ margin-top: 25px;
 margin-left: 10%;
 }
 
+.index__img {
+  max-width: 700px;
+}
+
 .index__text {
 flex-basis: 60%;
 color: #3E2140;
@@ -294,7 +298,7 @@ footer {
   text-align: center;
   margin-bottom: 10px;
 }
-
+}
 
 @media screen and (max-width: 768px) {
 /*CONTACT*/
@@ -305,7 +309,7 @@ footer {
   margin-left: 0;
   margin-right: 0;
 }  
-
+}
 
 @media screen and (max-width: 480px) {
 /*CONTACT*/
@@ -317,6 +321,8 @@ footer {
 footer {
   height: 35vh;
   min-height: 250px;
+  padding-left: 0;
+  padding-right: 0;
 }
 /*FOOTER*/
 .foot__suscribe__section__btn {
@@ -327,7 +333,5 @@ footer {
   padding: 15px 0px;
   font-size: small;
 }
-footer {
-  padding-left: 0;
-  padding-right: 0;
+
 }
