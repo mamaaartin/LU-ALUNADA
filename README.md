@@ -1,3 +1,3 @@
-SITIO DEMO (MOSTRANDO BRANCH CON BOOSTRAP)
+SITIO DEMO
 
 https://mamaaartin.github.io/LU-ALUNADA/
