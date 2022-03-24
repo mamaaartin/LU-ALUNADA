@@ -1,0 +1,63 @@
+/*INDEX*/
+.index__description {
+    font-family: $font-primary;
+    font-size: large;
+    margin-top: 25px;
+    margin-left: 10%;
+    }
+    .index {
+    gap: 2rem;    
+    justify-content: center;
+    }
+    
+    .index__picture {
+    flex-basis: 40%;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    }
+  
+    .index__text {
+    flex-basis: 60%;
+    color: $secondary;
+    font-family: $font-primary;
+    justify-content: center;
+    padding-bottom: 30px;
+    }
+    
+    .index__image {
+    width: 100%;
+    max-width: 443px;
+    max-height: 443px;
+    }
+    @media screen and (max-width: 1024px) {
+         /*INDEX*/ 
+          .index {
+              flex-wrap: wrap;
+          }
+          .index__picture {
+              flex-grow: 1;
+          }
+          .index__description {
+            margin-left: 0;
+          }
+        }
+        @media screen and (max-width: 480px) {
+            /*INDEX*/
+            .index__picture {
+              max-width: 320px;
+            }
+            .index__description {
+              font-size: small;
+            }
+            } 
+            @media screen and (max-width: 320px) {
+  
+                /*INDEX*/
+                .index__image {
+                  max-width: 320px;
+                }
+                }                   
+/*INDEX*/
+
+            
