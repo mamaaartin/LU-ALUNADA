@@ -31,7 +31,6 @@
     max-height: 443px;
     }
     @media screen and (max-width: 1024px) {
-         /*INDEX*/ 
           .index {
               flex-wrap: wrap;
           }
@@ -42,22 +41,20 @@
             margin-left: 0;
           }
         }
-        @media screen and (max-width: 480px) {
-            /*INDEX*/
-            .index__picture {
-              max-width: 320px;
-            }
-            .index__description {
-              font-size: small;
-            }
-            } 
-            @media screen and (max-width: 320px) {
-  
-                /*INDEX*/
-                .index__image {
-                  max-width: 320px;
-                }
-                }                   
+    @media screen and (max-width: 480px) {
+
+        .index__picture {
+          max-width: 320px;
+        }
+        .index__description {
+          font-size: small;
+        }
+        } 
+    @media screen and (max-width: 320px) {
+        .index__image {
+          max-width: 320px;
+        }
+        }                   
 /*INDEX*/
 
             

@@ -106,14 +106,12 @@ header {
   }
   /* HEADER HAMBURGUER*/
   @media screen and (max-width: 1024px) {
-    /*HEADER*/
       header .menu {
           justify-content: flex-start;
           margin-left: 2em;
       }
     }
     @media screen and (max-width: 768px) {
-      /*HEADER*/
         header .menu {
             display: none;
         }
