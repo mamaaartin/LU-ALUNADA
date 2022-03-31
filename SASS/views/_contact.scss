@@ -1,157 +1,203 @@
 /*CONTACT*/
 .contact {
-    gap: 2rem;    
-    justify-content: center;
-    }
-    .contact__box{
-    display: inline-block;
-    width: 400px;
-    margin-top: 30px;
-    margin-left: 100px;
-    margin-right: 100px;
-    } 
-    
-    .contact__image {
-    border: none;
-    display: inline-block;
-    vertical-align: middle;
-    padding: 0;  
-    margin: 0;
-    }
-    
-    
-    .contact__Mail {
-    border: none;
-    padding: 15px 15px;
-    text-align: left;
-    color: $secondary;
-    display: inline-block;
-    font-family: $font-primary;
-    font-size: large; 
-    }
-    
-    .contact__Phone {
-    border: none;
-    padding: 15px 15px;
-    text-align: left;
-    color: $secondary;
-    display: inline-block;
-    font-family: $font-primary;
-    font-size: large;
-    }
-    
-    .contact__boxName {
-    border: none;
-    padding: 15px 10px;
-    text-align: left;
-    text-decoration: none;
-    display: inline-block;
-    font-family: $font-primary;
-    font-size: large;
-    border-style: solid;
-    margin-top: 30px;
-    margin-left: 100px;
-    margin-right: 100px;  
+  gap: 2rem;
+  justify-content: center;
+}
+
+.contact__box {
+  display: inline-block;
+  width: 400px;
+  margin-top: 30px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.contact__image {
+  border: none;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0;
+  margin: 0;
+}
+
+
+.contact__Mail {
+  border: none;
+  padding: 15px 15px;
+  text-align: left;
+  color: $secondary;
+  display: inline-block;
+  font-family: $font-primary;
+  font-size: large;
+}
+
+.contact__Phone {
+  border: none;
+  padding: 15px 15px;
+  text-align: left;
+  color: $secondary;
+  display: inline-block;
+  font-family: $font-primary;
+  font-size: large;
+}
+
+.contact__boxName {
+  border: none;
+  padding: 15px 10px;
+  text-align: left;
+  text-decoration: none;
+  display: inline-block;
+  font-family: $font-primary;
+  font-size: large;
+  border-style: solid;
+  margin-top: 30px;
+  margin-left: 100px;
+  margin-right: 100px;
+  max-width: 500px;
+}
+
+.contact__boxMail {
+  border: none;
+  padding: 15px 10px;
+  text-align: left;
+  text-decoration: none;
+  display: inline-block;
+  font-family: $font-primary;
+  font-size: large;
+  border-style: solid;
+  margin-top: 30px;
+  margin-left: 100px;
+  margin-right: 100px;
+  max-width: 500px;
+}
+
+.contact__boxSubject {
+  border: none;
+  padding: 15px 10px;
+  text-align: left;
+  text-decoration: none;
+  display: inline-block;
+  font-family: $font-primary;
+  font-size: large;
+  border-style: solid;
+  margin-top: 30px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.contact__boxMessage {
+  border: none;
+  padding: 15px 10px;
+  text-align: left;
+  text-decoration: none;
+  display: inline-block;
+  font-family: $font-primary;
+  font-size: large;
+  border-style: solid;
+  margin-top: 30px;
+  margin-left: 100px;
+  margin-right: 100px;
+  height: 90px;
+}
+
+.contact__btn {
+  background-color: $secondary;
+  border: solid;
+  border-color: $secondary;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: $font-primary;
+  font-size: large;
+  margin-top: 30px;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-bottom: 50px;
+}
+
+.contact__btn:hover {
+  background-color: $principal;
+  border: solid;
+  border-color: $secondary;
+  color: $secondary;
+}
+
+/*MEDIA QUERYS*/
+@media screen and (max-width: 1200px) {
+  .contact {
+    align-content: center;
+  }
+
+  .contact__info {
+    flex-direction: column;
+  }
+
+  .contact__boxSubject {
     max-width: 500px;
-    }
-    .contact__boxMail {
-    border: none;
-    padding: 15px 10px;
-    text-align: left;
-    text-decoration: none;
-    display: inline-block;
-    font-family: $font-primary;
-    font-size: large;
-    border-style: solid;
-    margin-top: 30px;
-    margin-left: 100px;
-    margin-right: 100px;  
+  }
+
+  .contact__boxMessage {
     max-width: 500px;
-    }
-    .contact__boxSubject {
-    border: none;
-    padding: 15px 10px;
-    text-align: left;
-    text-decoration: none;
-    display: inline-block;
-    font-family: $font-primary;
-    font-size: large;
-    border-style: solid;
-    margin-top: 30px;
-    margin-left: 100px;
-    margin-right: 100px;    
-    }
-    .contact__boxMessage {
-    border: none;
-    padding: 15px 10px;
-    text-align: left;
-    text-decoration: none;
-    display: inline-block;
-    font-family: $font-primary;
-    font-size: large;
-    border-style: solid;
-    margin-top: 30px;
-    margin-left: 100px;
-    margin-right: 100px;
-    height: 90px;
-    }
-    
-    .contact__btn {
-    background-color: $secondary; 
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-family: $font-primary;
-    font-size: large;
-    margin-top: 30px;
-    margin-left: 100px;
-    margin-right: 100px;
-    margin-bottom: 50px;
-    }
-    
-    .contact__btn:hover {
-    background-color: $principal;
-    border: solid;
-    border-color: $secondary;
-    color: $secondary;
-    } 
-  /*MEDIA QUERYS*/
-  @media screen and (max-width: 1200px) {
-    .contact{
-      align-content: center;
-    }  
-    .contact__info {
-      flex-direction: column;
-    }
-    
-    .contact__boxSubject {
-      max-width: 500px;    
-    }
-    .contact__boxMessage {
-      max-width: 500px;
-    }
-    .contact__btn {
-      max-width: 500px;
-    }
-    .contact__box {
-      max-width: 500px;
-    }
-    
-    }    
-    @media screen and (max-width: 768px) {        
-        .contact__info {
-          flex-direction: column;
-        }
-        
-        .contact__boxName{width: 80%; margin-left: 20px; margin-right: 20px;}
-        .contact__boxMail{width: 80%; margin-left: 20px; margin-right: 20px;}
-        .contact__boxSubject{width: 80%; margin-left: 20px; margin-right: 20px;}
-        .contact__boxMessage{width: 80%; margin-left: 20px; margin-right: 20px;}
-        .contact__btn{width: 80%; margin-left: 20px; margin-right: 20px;}
-        .contact__box{width: 80%; margin-left: 20px; margin-right: 20px;}
-        .contact__info{width: 80%; margin-left: 20px; margin-right: 20px;}
-    }         
+  }
+
+  .contact__btn {
+    max-width: 500px;
+  }
+
+  .contact__box {
+    max-width: 500px;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  .contact__info {
+    flex-direction: column;
+  }
+
+  .contact__boxName {
+    width: 80%;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .contact__boxMail {
+    width: 80%;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .contact__boxSubject {
+    width: 80%;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .contact__boxMessage {
+    width: 80%;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .contact__btn {
+    width: 80%;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .contact__box {
+    width: 80%;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .contact__info {
+    width: 80%;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
 /*CONTACT*/
