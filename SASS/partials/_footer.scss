@@ -1,14 +1,13 @@
 /* footer */
 footer {
-  display: flex;
+  @include flex-row-between;
   height: 10vh;
   min-height: 88px;
-  justify-content: space-between;
   align-items: center;
   padding-left: 2em;
   padding-right: 2em;
-  background: linear-gradient(to left, $gradientstart, $gradientend);
-  color: $principal;
+  background: linear-gradient(to left, map-get($colores, gradientstart), map-get($colores, gradientend));
+  color: map-get($colores, principal);
   font-family: $font-primary;
   font-size: large;
 }
@@ -28,8 +27,7 @@ footer {
 }
 
 .foot__suscribe__mail {
-  display: flex;
-  justify-content: flex-end;
+  @include flex-row-end;
   height: 54px;
 }
 
@@ -64,10 +62,10 @@ footer {
 
 
 .foot__suscribe__section__btn {
-  background-color: $secondary;
+  background-color: map-get($colores, secondary);
   border: solid;
-  border-color: $secondary;
-  color: $principal;
+  border-color: map-get($colores, secondary);
+  color: map-get($colores, principal);
   padding: 12px 32px;
   text-align: center;
   text-decoration: none;
@@ -77,25 +75,23 @@ footer {
   line-height: normal;
 
   &:hover {
-    background-color: $principal;
+    background-color: map-get($colores, principal);
     border: solid;
-    border-color: $secondary;
-    color: $secondary;
+    border-color: map-get($colores, secondary);
+    color: map-get($colores, secondary);
   }
 }
 
 /*MEDIA QUERYS*/
 @media screen and (max-width: 1200px) {
   footer {
-    flex-direction: column;
-    justify-content: center;
+    @include flex-column-center;
     height: 25vh;
     min-height: 220px;
   }
 
   .foot__suscribe__mail {
-    flex-direction: column;
-    justify-content: center;
+    @include flex-column-center;
     height: 108px;
   }
 

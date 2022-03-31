@@ -2,6 +2,7 @@
 /*variables*/
 /*variables*/
 /* mixins */
+/* mixins */
 .flex-row {
   display: flex; }
 
@@ -12,7 +13,6 @@
 .container {
   margin: 0 0 0 0; }
 
-/* mixins */
 /* normalize */
 *,
 *::after,
@@ -48,9 +48,9 @@ a {
 /* footer */
 footer {
   display: flex;
+  justify-content: space-between;
   height: 10vh;
   min-height: 88px;
-  justify-content: space-between;
   align-items: center;
   padding-left: 2em;
   padding-right: 2em;
@@ -116,11 +116,13 @@ footer {
 /*MEDIA QUERYS*/
 @media screen and (max-width: 1200px) {
   footer {
+    display: flex;
     flex-direction: column;
     justify-content: center;
     height: 25vh;
     min-height: 220px; }
   .foot__suscribe__mail {
+    display: flex;
     flex-direction: column;
     justify-content: center;
     height: 108px; }
@@ -150,6 +152,7 @@ header {
     width: 100%;
     max-height: 10vh;
     min-height: 88px;
+    display: flex;
     justify-content: space-between;
     align-items: center; }
   header .logo {
@@ -159,11 +162,13 @@ header {
     min-height: 88px; }
   header .menu {
     flex-basis: 90%;
+    display: flex;
     justify-content: flex-end;
     margin-right: 20px; }
   header .menu__item {
     display: flex;
-    align-items: center; }
+    flex-direction: column;
+    justify-content: center; }
 
 .menu__link {
   font-family: "Raleway", Helvetica, Arial, Lucida, sans-serif;
@@ -258,6 +263,7 @@ header .hamburger-menu {
 /* HEADER HAMBURGUER*/
 @media screen and (max-width: 1024px) {
   header .menu {
+    display: flex;
     justify-content: flex-start;
     margin-left: 2em; } }
 
@@ -432,36 +438,7 @@ header .hamburger-menu {
     margin-right: 20px; } }
 
 /*CONTACT*/
-/*GALLERY*/
-/*  
-.main {
-    justify-content: center;
-    padding-bottom: 25px;
-    }
-    
-.gallery {
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  max-width: 1000px;
-}
-    
-    
-    .gallery__object {
-      filter: none;
-      -webkit-filter: none;
-      &:hover {
-        transform: scale(1.5,1.5);
-        }
-    }
-    
-    @media screen and (max-width: 1024px) {
-          .gallery__object:hover {
-            transform: scale(1.2,1.2);
-           }
-        
-        }
-        */
+/*MUNAY*/
 .main {
   align-items: center;
   justify-content: center;
@@ -472,20 +449,18 @@ header .hamburger-menu {
 
 .carousel-control-next-icon {
   background-image: url("https://api.iconify.design/bi/arrow-right-square-fill.svg?color=%233e2140&width=100&height=100");
-  width: 10rem;
   height: 20rem;
   opacity: .1; }
 
 .carousel-control-prev-icon {
   background-image: url("https://api.iconify.design/bi/arrow-left-square-fill.svg?color=%233e2140&width=100&height=100");
-  width: 10rem;
   height: 20rem;
   opacity: .1; }
 
 .carousel-indicators .active {
   background-color: #3e2140; }
 
-/*GALLERY*/
+/*MUNAY*/
 /*INDEX*/
 .index__description {
   font-family: "Raleway", Helvetica, Arial, Lucida, sans-serif;
@@ -535,17 +510,14 @@ header .hamburger-menu {
 
 /*INDEX*/
 /*SERVICES*/
-.services__description {
+.services__description, .services__title {
   font-family: "Raleway", Helvetica, Arial, Lucida, sans-serif;
   font-size: large;
   margin-top: 25px;
   margin-left: 10%; }
 
 .services__title {
-  font-family: "Raleway", Helvetica, Arial, Lucida, sans-serif;
-  font-size: large;
-  margin-top: 25px;
-  margin-left: 10%; }
+  text-decoration: underline; }
 
 .services {
   gap: 2rem;
@@ -580,7 +552,7 @@ header .hamburger-menu {
 @media screen and (max-width: 480px) {
   .services__picture {
     max-width: 320px; }
-  .services__description {
+  .services__description, .services__title {
     font-size: small; } }
 
 @media screen and (max-width: 320px) {
@@ -589,14 +561,7 @@ header .hamburger-menu {
 
 /*SERVICES*/
 /*TESTIMONIES*/
-.testimonies__title {
-  text-align: center;
-  color: #3E2140;
-  font-family: "Raleway", Helvetica, Arial, Lucida, sans-serif;
-  font-size: medium;
-  margin-top: 25px; }
-
-.testimonies__description {
+.testimonies__description, .testimonies__title {
   text-align: center;
   font-family: "Raleway", Helvetica, Arial, Lucida, sans-serif;
   font-size: small;
@@ -607,8 +572,5 @@ header .hamburger-menu {
   color: #3E2140; }
 
 .testimonies__title {
-  text-align: center;
-  color: #3E2140;
-  font-family: "Raleway", Helvetica, Arial, Lucida, sans-serif;
   font-size: medium;
-  margin-top: 25px; }
+  font-style: normal; }

@@ -1,63 +1,70 @@
 /*SERVICES*/
 .services__description {
-    font-family: $font-primary;
-    font-size: large;
-    margin-top: 25px;
-    margin-left: 10%;
-    }
-    
-    .services__title {
-    font-family: $font-primary;
-    font-size: large;
-    margin-top: 25px;
-    margin-left: 10%;
-    }
-    .services {
-    gap: 2rem;    
-    justify-content: center;
-    }
-    
-    .services__picture {
-    flex-basis: 40%;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: nowrap;
-    }
-    .services__text {
-    flex-basis: 60%;
-    color: $secondary;
-    font-family: $font-primary;
-    justify-content: center;
-    padding-bottom: 30px;
-    }
-    
-    .services__image {
-    width: 100%;
-    max-width: 443px;
-    max-height: 443px;
-    }
-    @media screen and (max-width: 1024px) {
-      .services {
-          flex-wrap: wrap;
-      }
-      .services__picture {
-          flex-grow: 1;
-      }
-      .service__description {
-        margin-left: 0;
-      }
-    }
-    @media screen and (max-width: 480px) {
-    .services__picture {
-        max-width: 320px;
-    }
-    .services__description {
-      font-size: small;
-    }
-    } 
-    @media screen and (max-width: 320px) {
-    .services__image {
-      max-width: 320px;
-    }
-    }                   
-/*SERVICES*/        
+  font-family: $font-primary;
+  font-size: large;
+  margin-top: 25px;
+  margin-left: 10%;
+}
+
+.services__title {
+  @extend .services__description;
+  text-decoration: underline;
+}
+
+.services {
+  gap: 2rem;
+  justify-content: center;
+}
+
+.services__picture {
+  flex-basis: 40%;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+
+.services__text {
+  flex-basis: 60%;
+  color: $secondary;
+  font-family: $font-primary;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+
+.services__image {
+  width: 100%;
+  max-width: 443px;
+  max-height: 443px;
+}
+
+@media screen and (max-width: 1024px) {
+  .services {
+    flex-wrap: wrap;
+  }
+
+  .services__picture {
+    flex-grow: 1;
+  }
+
+  .service__description {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .services__picture {
+    max-width: 320px;
+  }
+
+  .services__description {
+    font-size: small;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .services__image {
+    max-width: 320px;
+  }
+}
+
+/*SERVICES*/
