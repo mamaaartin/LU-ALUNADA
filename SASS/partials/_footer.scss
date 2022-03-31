@@ -90,6 +90,10 @@ footer {
     min-height: 220px;
   }
 
+  .foot__suscribe__section {
+    @include flex-row-center;
+  }
+
   .foot__suscribe__mail {
     @include flex-column-center;
     height: 108px;
