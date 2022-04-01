@@ -15,42 +15,47 @@
 @mixin flex-row-start {
   @include flex;
   justify-content: flex-start;
-}
 
-@mixin flex-row-end {
-  @include flex;
-  justify-content: flex-end;
-}
-
-@mixin flex-row-between {
-  @include flex;
-  justify-content: space-between;
-}
-
-@mixin flex-row-center {
-  @include flex;
-  justify-content: center;
-}
-
-@mixin flex-column-center {
-  @include flex-column;
-  justify-content: center;
-}
+  @mixin flex-column-start {
+    @include flex-column;
+    justify-content: flex-start;
+  }
 
 
-/* mixins */
+  @mixin flex-row-end {
+    @include flex;
+    justify-content: flex-end;
+  }
+
+  @mixin flex-row-between {
+    @include flex;
+    justify-content: space-between;
+  }
+
+  @mixin flex-row-center {
+    @include flex;
+    justify-content: center;
+  }
+
+  @mixin flex-column-center {
+    @include flex-column;
+    justify-content: center;
+  }
+
+
+  /* mixins */
 
 
 
-.flex-row {
-  display: flex;
-}
+  .flex-row {
+    display: flex;
+  }
 
-.flex-column {
-  display: flex;
-  flex-direction: column;
-}
+  .flex-column {
+    display: flex;
+    flex-direction: column;
+  }
 
-.container {
-  margin: 0 0 0 0;
-}
+  .container {
+    margin: 0 0 0 0;
+  }

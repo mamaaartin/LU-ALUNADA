@@ -1,5 +1,6 @@
 /*CONTACT*/
 .contact {
+  @include flex-column-start;
   gap: 2rem;
   justify-content: center;
 }
