@@ -25,7 +25,9 @@
     <header>
         <nav class="navbar flex-row container">
             <picture class="logo flex-row">
-                <img src="./images/logo.png" alt="lu_a_lunada">
+                <a href="index.html">
+                    <img src="./images/logo.png" alt="lu_a_lunada">
+                </a>
             </picture>
             <ul class="menu flex-row">
                 <li class="menu__item">
@@ -74,11 +76,11 @@
             class="contact flex-column">
             <div class="contact__info flex-row">
                 <div class="contact__box">
-                    <img class="contact__image" src='./images/mail.svg' />
+                    <img class="contact__image" src='./images/mail.svg' alt="mail" />
                     <a class="contact__Mail" href="mailto:lulebrato@gmail.com">lulebrato@gmail.com</menu__item>
                 </div>
                 <div class="contact__box">
-                    <img class="contact__image" src='./images/phone.svg' />
+                    <img class="contact__image" src='./images/phone.svg' alt='telefono' />
                     <a class="contact__Phone" href="https://wa.me/59898838302">+598 98838302</a>
                 </div>
             </div>
@@ -93,13 +95,12 @@
     <footer>
         <ul class=" foot__networks flex-row">
             <li><a href="https://www.facebook.com/lulebrato" class="foot__networks__contact"><img
-                        src='./images/facebook.svg' /></a>
+                        src='./images/facebook.svg' alt='facebook' /></a>
             </li>
             <li><a href="https://www.instagram.com/lu_a_lunada/?hl=es" class="foot__networks__contact"><img
-                        src='./images/instagram.svg' /></a>
+                        src='./images/instagram.svg' alt='instagram' /></a>
             </li>
         </ul>
-
         <form class="foot__suscribe__mail" action="https://getform.io/f/59edd0a2-7173-4ace-b32a-6328f38f2b8d"
             method="POST" enctype="">
             <section class="foot__suscribe__text">
@@ -107,7 +108,7 @@
                 <p class="foot__suscribe__text__line">Si querés suscribirte a mi newsletter mensual dejame tu Email.</p>
             </section>
             <section class="foot__suscribe__section">
-                <input class="foot__suscribe__section__box" type="text" name="suscripcion" id="correo"
+                <input class="foot__suscribe__section__box" type="email" name="suscripcion" id="correo"
                     placeholder="Ingresa tu Email" required>
                 <input class="foot__suscribe__section__btn" type="submit" value="Subscribite">
             </section>
